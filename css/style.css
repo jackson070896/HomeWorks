@@ -107,18 +107,22 @@ body {
 
 .dignity {
     display: flex;
-    position: relative;
-    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .dignity h2 {
-    position: absolute;
-    margin: 0;
+    width: 100%;
+    margin: 0 0 40px 0;
 }
 
 .dignity-item {
-    /* Почему не margin-bottom у заголовка, у заголовка position: absolute стоит */
-    padding: 59px 0 0 0;
+    width: 50%;
+    padding: 0;
+}
+
+div:nth-child(2) > details:nth-child(3),
+div:nth-child(3) > details:nth-child(3) {
+    padding: 0;
 }
 
 .dignity-item details:not(:first-child) :not(:last-child) {
@@ -501,6 +505,26 @@ textarea[placeholder] {
     color: white;
 }
 
+.main-footer_contacts_item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+.main-footer_contacts_item > span {
+    padding: 5px;
+}
+
+.main-footer_contacts_item > span > i {
+    margin: 0 5px 0 0;
+}
+
+.isq:before {
+    content: url('../img/icq_icon.png');
+}
+
+
 footer {
     min-height: 30px;
     background-color: #f5f5f5;
@@ -511,6 +535,7 @@ footer {
     align-items: center;
 }
 
+
 .contacts-social-network {
     display: flex;
 }
@@ -519,6 +544,39 @@ footer {
     margin: 0 0 29px 15px;
 }
 
+.social-buttons {
+    display: flex;
+    flex-direction: row;
+    width: 240px;
+}
 
+.social-icon {
+    margin: 0 4px 0 0;
+    display: block;
+    width: 42px;
+    height: 42px;
+    background-color: transparent;
+    background-image: url("../img/social_buttons.png");
+}
+
+.icon-tw {
+    background-position: -1px 0;
+}
+
+.icon-f {
+    background-position: -50px 0;
+}
+
+.icon-in {
+    background-position: -99px 0;
+}
+
+.icon-g {
+    background-position: -149px 0;
+}
+
+.icon-yt {
+    background-position: -198px 0;
+}
 
 
